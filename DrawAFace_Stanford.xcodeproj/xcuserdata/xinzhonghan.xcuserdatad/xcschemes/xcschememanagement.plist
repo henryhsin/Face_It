@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DrawAFace_Stanford.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>826D77C71D9EBF8800724453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>826D77DB1D9EBF8800724453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>826D77E61D9EBF8800724453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
