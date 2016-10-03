@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FacialExpression: NSObject {
+struct FacialExpression {
     enum Eyes: Int{
         case Open
         case Close

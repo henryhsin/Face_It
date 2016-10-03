@@ -16,26 +16,28 @@ class FaceView: UIView
 {
     @IBInspectable
     var scale: CGFloat = 0.9 { didSet{ setNeedsDisplay()} }
-    
     @IBInspectable
     var mouthCurvature: Double = -1.0 { didSet{ setNeedsDisplay()} }//1 is full laugh, -1 is full down
-    
     @IBInspectable
     var eyeOpen:Bool = true { didSet{ setNeedsDisplay()} }
-    
     @IBInspectable
     var eyeBrowTilt: Double = 0.6 { didSet{ setNeedsDisplay()} }//-1 is full follow, 1 is full relax
-    
     @IBInspectable
     var strokeCollor: UIColor = UIColor.blue { didSet{ setNeedsDisplay()} }
-    
     @IBInspectable
     var fillColor: UIColor = UIColor.yellow { didSet{ setNeedsDisplay()} }
-    
     @IBInspectable
     var lineWidth: CGFloat = 5.0 { didSet{ setNeedsDisplay()} }
     
-   
+    func changeScale(recognizer: UIPinchGestureRecognizer){
+        switch recognizer.state {
+        case .changed, .ended:
+            scale *= recognizer.scale
+            recognizer.scale = 1.0 //remember to reset the recognizer.scale to 1.0,because evey single time you change, it will accumulate, so next time you scale again it will remember last time you have to scale
+        default:
+            break
+        }
+    }
     
     
     fileprivate var skullRadius: CGFloat{
